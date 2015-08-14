@@ -52,13 +52,13 @@
 	vertical-align: top;
 	/*min-width: 16em;*/
 	margin: 0 0 2.5em;
-	padding: 1.5em 20px 2em;
-	background: #24252A;
+	padding: 0 0 2em;
+	background: #ffe1e1;
 	border-radius: 5px;
 }
 
 .product--selected {
-	box-shadow: 0 0 0 2px #5C5EDC;
+	box-shadow: 0 0 0 2px #ffa6a6;
 }
 
 .flexbox .product {
@@ -284,7 +284,7 @@
 
 .action--remove:hover,
 .action--compare-add:hover {
-	color: #5C5EDC;
+	color: #ffa6a6;
 }
 
 .action--compare-add .fa-check,
@@ -294,7 +294,7 @@
 
 .action--compare-add input[type=checkbox]:checked ~ .fa-check {
 	display: block;
-	color: #5C5EDC;
+	color: #ffa6a6;
 }
 
 .check-hidden {
