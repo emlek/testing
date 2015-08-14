@@ -25,13 +25,13 @@
 
 /* if flexbox is supported, let's use it to lay out the products */
 .flexbox .grid {
-	display: -ms-flexbox;
+/*	display: -ms-flexbox;
 	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
+	display: flex;*/
+/*	-webkit-flex-direction: row;
 	-ms-flex-direction: row;
-	flex-direction: row;
-	-webkit-flex-wrap: wrap;
+	flex-direction: row;*/
+/*	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-justify-content: center;
@@ -42,7 +42,7 @@
 	align-content: stretch;
 	-webkit-align-items: flex-start;
 	-ms-flex-align: start;
-	align-items: flex-start;
+	align-items: flex-start;*/
 }
 
 /* product */
@@ -51,8 +51,8 @@
 	display: inline-block;
 	vertical-align: top;
 	/*min-width: 16em;*/
-	margin: 0 1em 2.5em;
-	padding: 1.5em 1.5em 2em;
+	margin: 0 0 2.5em;
+	padding: 1.5em 20px 2em;
 	background: #24252A;
 	border-radius: 5px;
 }
@@ -140,7 +140,7 @@
 .product__title {
 	font-size: 150%;
 	margin: 1em 0 0;
-	min-height: 3em;
+	min-height: 4em;
 }
 
 .product__price {
@@ -247,7 +247,7 @@
 
 .compare-basket--active .action--compare:nth-child(3),
 .compare-basket--active .action--compare:nth-child(4) {
-	background-color: #494BC7;
+	background-color: #6b6bff;
 	color: #fff;
 	pointer-events: auto;
 	cursor: pointer;
@@ -309,7 +309,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #212227;
+	background: #ffa6a6;
 	z-index: 1000;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
