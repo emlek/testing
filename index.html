@@ -13,6 +13,24 @@
 		
 		<!-- Modernizr is used for flexbox fallback -->
 		<script src="js/modernizr.custom.js"></script>
+		<style>
+		@media (max-width: 479px) {
+		/* __________ Bootstrap Style __________ */
+			.col-ss-1, .col-ss-2, .col-ss-3, .col-ss-4, .col-ss-5, .col-ss-6, .col-ss-7, .col-ss-8, .col-ss-9, .col-ss-10, .col-ss-11 {float: left;}
+			.col-ss-12 {width: 100%;}
+			.col-ss-11 {width: 91.66666666666666%;}
+			.col-ss-10 {width: 83.33333333333334%;}
+			.col-ss-9 {width: 75%;}
+			.col-ss-8 {width: 66.66666666666666%;}
+			.col-ss-7 {width: 58.333333333333336%;}
+			.col-ss-6 {width: 50%;}
+			.col-ss-5 {width: 41.66666666666667%;}
+			.col-ss-4 {width: 33.33333333333333%;}
+			.col-ss-3 {width: 25%;}
+			.col-ss-2 {width: 16.666666666666664%;}
+			.col-ss-1 {width: 8.333333333333332%;}
+		}
+		</style>
 	</head>
 	<body>
 		<nav class="navbar navbar-custom navbar-custom-shop navbar-fixed-top top-nav-collapse" role="navigation">
@@ -68,9 +86,11 @@
 			<button class="action action--button action--compare"><i class="fa fa-check"></i><span class="action__text">Compare</span></button>
 		</div>
 		<style type="text/css">
+		.sm-padding-left-right {
+			padding: 0 5px;
+		}
 		.product-owner {
-			padding: 8px;
-			float: left;
+			padding: 12px;
 		}
 		.product-owner img {
 			width: 30px;
@@ -78,19 +98,24 @@
 			max-width: 100%;
 			margin-right: 8px;
 			display: inline-block;
+			border-radius: 50%;
 		}
 		.product-owner a {
+			color: #2E3444;
 			display: inline-block;
+			cursor: pointer;
+			outline: none;
+			text-decoration: none;
 		}
 		</style>
 		<div class="view container-fluid" style="margin-top: 100px;">
 			<!-- Product grid -->
 			<section class="grid row">
 				<!-- Products -->
-				<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-xs-6 col-ss-12 sm-padding-left-right">
 					<div class="product">
 						<div class="product__info">
-							<div class="product-owner">
+							<div class="product-owner text-left">
 								<img src="avatar/ava1.jpg">
 								<a class="product__owner">Chryseia</a>
 							</div>
@@ -106,11 +131,14 @@
 						<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
 					</div>
 				</div>	
-				<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-xs-6 col-ss-12 sm-padding-left-right">
 					<div class="product">
 						<div class="product__info">
-							<h3 class="product__owner">Chryseia</h3>
-							<img class="product__image" src="products/6.jpg" alt="Product 2" />
+							<div class="product-owner text-left">
+								<img src="avatar/ava1.jpg">
+								<a class="product__owner">Chryseia</a>
+							</div>
+							<img class="product__image" data-alt-src="products/1.jpg" src="products/6.jpg"  />
 							<h3 class="product__title">Meiomi Pinot Noir</h3>
 							<span class="product__year extra highlight">2013</span>
 							<span class="product__region extra highlight">California</span>
@@ -122,10 +150,13 @@
 						<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
 					</div>
 				</div>	
-				<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-xs-6 col-ss-12 sm-padding-left-right">
 					<div class="product">
 						<div class="product__info">
-							<h3 class="product__owner">Chryseia</h3>
+							<div class="product-owner text-left">
+								<img src="avatar/ava1.jpg">
+								<a class="product__owner">Chryseia</a>
+							</div>
 							<img class="product__image" src="products/1.jpg" alt="Product 3" />
 							<h3 class="product__title">Antucura Cabernet Sauvignon</h3>
 							<span class="product__year extra highlight">2013</span>
@@ -138,10 +169,13 @@
 						<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
 					</div>
 				</div>	
-				<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-xs-6 col-ss-12 sm-padding-left-right">
 					<div class="product">
 						<div class="product__info">
-							<h3 class="product__owner">Chryseia</h3>
+							<div class="product-owner text-left">
+								<img src="avatar/ava1.jpg">
+								<a class="product__owner">Chryseia</a>
+							</div>
 							<img class="product__image" src="products/2.jpg" alt="Product 4" />
 							<h3 class="product__title">Leonetti Sangiovese</h3>
 							<span class="product__year extra highlight">2012</span>
@@ -154,10 +188,13 @@
 						<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
 					</div>
 				</div>	
-				<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-xs-6 col-ss-12">
 					<div class="product">
 						<div class="product__info">
-							<h3 class="product__owner">Chryseia</h3>
+							<div class="product-owner text-left">
+								<img src="avatar/ava1.jpg">
+								<a class="product__owner">Chryseia</a>
+							</div>
 							<img class="product__image" src="products/3.jpg" alt="Product 5" />
 							<h3 class="product__title">Chateau Pontet-Canet</h3>
 							<span class="product__year extra highlight">2009</span>
@@ -170,10 +207,13 @@
 						<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
 					</div>
 				</div>	
-				<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-xs-6 col-ss-12">
 					<div class="product">
 						<div class="product__info">
-							<h3 class="product__owner">Chryseia</h3>
+							<div class="product-owner text-left">
+								<img src="avatar/ava1.jpg">
+								<a class="product__owner">Chryseia</a>
+							</div>
 							<img class="product__image" src="products/4.jpg" alt="Product 6" />
 							<h3 class="product__title">Quintessa</h3>
 							<span class="product__year extra highlight">2011</span>
@@ -186,10 +226,13 @@
 						<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
 					</div>
 				</div>	
-				<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-xs-6 col-ss-12">
 					<div class="product">
 						<div class="product__info">
-							<h3 class="product__owner">Chryseia</h3>
+							<div class="product-owner text-left">
+								<img src="avatar/ava1.jpg">
+								<a class="product__owner">Chryseia</a>
+							</div>
 							<img class="product__image" src="products/7.jpg" alt="Product 7" />
 							<h3 class="product__title">Clarendon Hills Astralis</h3>
 							<span class="product__year extra highlight">2006</span>
@@ -202,10 +245,13 @@
 						<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
 					</div>
 				</div>	
-				<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-xs-6 col-ss-12">
 					<div class="product">
 						<div class="product__info">
-							<h3 class="product__owner">Chryseia</h3>
+							<div class="product-owner text-left">
+								<img src="avatar/ava1.jpg">
+								<a class="product__owner">Chryseia</a>
+							</div>
 							<img class="product__image" src="products/8.jpg" alt="Product 8" />
 							<h3 class="product__title">Lapostolle Clos Apalta</h3>
 							<span class="product__year extra highlight">2010</span>
@@ -225,11 +271,25 @@
 			<button class="action action--close"><i class="fa fa-remove"></i><span class="action__text action__text--invisible">Close comparison overlay</span></button>
 		</section>
 
-
+		
 
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/main.js"></script>
+		<script type="text/javascript">
+		var sourceSwap = function () {
+		    var $this = $(this);
+		    var newSource = $this.data('alt-src');
+		    $this.data('alt-src', $this.attr('src'));
+		    $this.attr('src', newSource);
+		}
+
+		$(function() {
+		    $('img[data-alt-src]').each(function() { 
+		        new Image().src = $(this).data('alt-src'); 
+		    }).hover(sourceSwap, sourceSwap); 
+		});
+		</script>
 	</body>
 </html>

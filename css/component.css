@@ -71,7 +71,7 @@
 /* product info */
 .product__info > span {
 	display: block;
-	padding: 1em 0;
+	padding: 12px 0;
 }
 
 /* since we'll be using the product info inside of the comparison, we'll hide the extra info for the grid view */
@@ -87,13 +87,13 @@
 	transform-origin: 50% 100%;
 }
 
-.product:hover .product__image {
+/*.product:hover .product__image {
 	-webkit-animation: swing 0.6s forwards;	
 	animation: swing 0.6s forwards;	
-}
+}*/
 
 /* https://daneden.github.io/animate.css/ */
-@-webkit-keyframes swing {
+/*@-webkit-keyframes swing {
 	25% {
 		-webkit-transform: rotate3d(0, 0, 1, 6deg);
 		transform: rotate3d(0, 0, 1, 6deg);
@@ -135,12 +135,12 @@
 		-webkit-transform: rotate3d(0, 0, 1, 0deg);
 		transform: rotate3d(0, 0, 1, 0deg);
 	}
-}
+}*/
 
 .product__title {
 	font-size: 150%;
 	margin: 1em 0 0;
-	min-height: 4em;
+	min-height: 3em;
 }
 
 .product__price {
@@ -264,9 +264,9 @@
 }
 
 .action--compare-add {
-	color: #ddd;
+	color: #ffa6a6;
 	position: absolute;
-	top: 10px;
+	top: 5px;
 	right: 5px;
 }
 
@@ -284,7 +284,7 @@
 
 .action--remove:hover,
 .action--compare-add:hover {
-	color: #ffa6a6;
+	color: #FF6B6B;
 }
 
 .action--compare-add .fa-check,
@@ -294,7 +294,7 @@
 
 .action--compare-add input[type=checkbox]:checked ~ .fa-check {
 	display: block;
-	color: #ffa6a6;
+	color: #FF6B6B;
 }
 
 .check-hidden {
@@ -534,7 +534,7 @@
 @media screen and (max-width: 59.688em) {
 	.grid {
 		padding: 2em 0.5em;
-		font-size: 65%;
+		font-size: 80%;
 	}
 
 	.product {
@@ -573,7 +573,7 @@
 
 	.compare__item .product__image {
 		height: 40px;
-		float: left;
+		/*float: left;*/
 	}
 
 	.compare__item .product__title {
@@ -597,7 +597,7 @@
 	}
 
 	.compare__item span[class^="product__"] {
-		display: inline-block;
+		display: block;
 		padding: 0.25em;
 		margin: 0 0 0.5em 0;
 		font-size: 0.85em;
