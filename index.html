@@ -16,19 +16,19 @@
 		<style>
 		@media (max-width: 479px) {
 		/* __________ Bootstrap Style __________ */
-			.col-ss-1, .col-ss-2, .col-ss-3, .col-ss-4, .col-ss-5, .col-ss-6, .col-ss-7, .col-ss-8, .col-ss-9, .col-ss-10, .col-ss-11 {float: left;}
-			.col-ss-12 {width: 100%;}
-			.col-ss-11 {width: 91.66666666666666%;}
-			.col-ss-10 {width: 83.33333333333334%;}
-			.col-ss-9 {width: 75%;}
-			.col-ss-8 {width: 66.66666666666666%;}
-			.col-ss-7 {width: 58.333333333333336%;}
-			.col-ss-6 {width: 50%;}
-			.col-ss-5 {width: 41.66666666666667%;}
-			.col-ss-4 {width: 33.33333333333333%;}
-			.col-ss-3 {width: 25%;}
-			.col-ss-2 {width: 16.666666666666664%;}
-			.col-ss-1 {width: 8.333333333333332%;}
+		.col-ss-1, .col-ss-2, .col-ss-3, .col-ss-4, .col-ss-5, .col-ss-6, .col-ss-7, .col-ss-8, .col-ss-9, .col-ss-10, .col-ss-11 {float: left;}
+		.col-ss-12 {width: 100%;}
+		.col-ss-11 {width: 91.66666666666666%;}
+		.col-ss-10 {width: 83.33333333333334%;}
+		.col-ss-9 {width: 75%;}
+		.col-ss-8 {width: 66.66666666666666%;}
+		.col-ss-7 {width: 58.333333333333336%;}
+		.col-ss-6 {width: 50%;}
+		.col-ss-5 {width: 41.66666666666667%;}
+		.col-ss-4 {width: 33.33333333333333%;}
+		.col-ss-3 {width: 25%;}
+		.col-ss-2 {width: 16.666666666666664%;}
+		.col-ss-1 {width: 8.333333333333332%;}
 		}
 		</style>
 	</head>
@@ -108,7 +108,7 @@
 			text-decoration: none;
 		}
 		</style>
-		<div class="view container-fluid" style="margin-top: 100px;">
+		<div class="view container" style="margin-top: 100px;">
 			<!-- Product grid -->
 			<section class="grid row">
 				<!-- Products -->
@@ -119,7 +119,7 @@
 								<img src="avatar/ava1.jpg">
 								<a class="product__owner">Chryseia</a>
 							</div>
-							<img class="product__image" src="products/5.jpg" alt="Product 1" />
+							<img class="product__image" data-alt-src="http://tympanus.net/Blueprints/ProductGridLayout/images/1_back.png" src="http://tympanus.net/Blueprints/ProductGridLayout/images/1_front.png" alt="Product 1" />
 							<h3 class="product__title">Chryseia</h3>
 							<span class="product__year extra highlight">2011</span>
 							<span class="product__region extra highlight">Douro</span>
@@ -128,7 +128,15 @@
 							<span class="product__price highlight">$55.90</span>
 							<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
 						</div>
-						<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+						<a href="http://www.google.com.hk" style="right: 30px;" class="action action--compare-add">
+							<i class="fa fa-eye"></i>
+							<span class="action__text action__text--invisible">Quick View</span>
+						</a>
+						<label class="action action--compare-add">
+							<input class="check-hidden" type="checkbox" />
+							<i class="fa fa-plus"></i><i class="fa fa-check"></i>
+							<span class="action__text action__text--invisible">Add to compare</span>
+						</label>
 					</div>
 				</div>	
 				<div class="col-md-3 col-xs-6 col-ss-12 sm-padding-left-right">
@@ -138,7 +146,7 @@
 								<img src="avatar/ava1.jpg">
 								<a class="product__owner">Chryseia</a>
 							</div>
-							<img class="product__image" data-alt-src="products/1.jpg" src="products/6.jpg"  />
+							<img class="product__image" data-alt-src="http://tympanus.net/Blueprints/ProductGridLayout/images/2_back.png" src="http://tympanus.net/Blueprints/ProductGridLayout/images/2_front.png"  />
 							<h3 class="product__title">Meiomi Pinot Noir</h3>
 							<span class="product__year extra highlight">2013</span>
 							<span class="product__region extra highlight">California</span>
@@ -157,7 +165,7 @@
 								<img src="avatar/ava1.jpg">
 								<a class="product__owner">Chryseia</a>
 							</div>
-							<img class="product__image" src="products/1.jpg" alt="Product 3" />
+							<img class="product__image" src="http://tympanus.net/Blueprints/ProductGridLayout/images/1_back.png" alt="Product 3" />
 							<h3 class="product__title">Antucura Cabernet Sauvignon</h3>
 							<span class="product__year extra highlight">2013</span>
 							<span class="product__region extra highlight">Argentina</span>
@@ -176,7 +184,7 @@
 								<img src="avatar/ava1.jpg">
 								<a class="product__owner">Chryseia</a>
 							</div>
-							<img class="product__image" src="products/2.jpg" alt="Product 4" />
+							<img class="product__image" src="http://tympanus.net/Blueprints/ProductGridLayout/images/3_back.png" alt="Product 4" />
 							<h3 class="product__title">Leonetti Sangiovese</h3>
 							<span class="product__year extra highlight">2012</span>
 							<span class="product__region extra highlight">Washington</span>
@@ -195,7 +203,7 @@
 								<img src="avatar/ava1.jpg">
 								<a class="product__owner">Chryseia</a>
 							</div>
-							<img class="product__image" src="products/3.jpg" alt="Product 5" />
+							<img class="product__image" src="http://tympanus.net/Blueprints/ProductGridLayout/images/1_back.png" alt="Product 5" />
 							<h3 class="product__title">Chateau Pontet-Canet</h3>
 							<span class="product__year extra highlight">2009</span>
 							<span class="product__region extra highlight">Pauillac, Bordeaux</span>
@@ -214,7 +222,7 @@
 								<img src="avatar/ava1.jpg">
 								<a class="product__owner">Chryseia</a>
 							</div>
-							<img class="product__image" src="products/4.jpg" alt="Product 6" />
+							<img class="product__image" src="http://tympanus.net/Blueprints/ProductGridLayout/images/2_back.png" alt="Product 6" />
 							<h3 class="product__title">Quintessa</h3>
 							<span class="product__year extra highlight">2011</span>
 							<span class="product__region extra highlight">California</span>
@@ -223,6 +231,7 @@
 							<span class="product__price highlight">$125.90</span>
 							<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
 						</div>
+
 						<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
 					</div>
 				</div>	
@@ -233,7 +242,7 @@
 								<img src="avatar/ava1.jpg">
 								<a class="product__owner">Chryseia</a>
 							</div>
-							<img class="product__image" src="products/7.jpg" alt="Product 7" />
+							<img class="product__image" src="http://tympanus.net/Blueprints/ProductGridLayout/images/3_back.png" alt="Product 7" />
 							<h3 class="product__title">Clarendon Hills Astralis</h3>
 							<span class="product__year extra highlight">2006</span>
 							<span class="product__region extra highlight">McLaren Vale</span>
@@ -252,7 +261,7 @@
 								<img src="avatar/ava1.jpg">
 								<a class="product__owner">Chryseia</a>
 							</div>
-							<img class="product__image" src="products/8.jpg" alt="Product 8" />
+							<img class="product__image" src="http://tympanus.net/Blueprints/ProductGridLayout/images/1_back.png" alt="Product 8" />
 							<h3 class="product__title">Lapostolle Clos Apalta</h3>
 							<span class="product__year extra highlight">2010</span>
 							<span class="product__region extra highlight">Chile</span>
