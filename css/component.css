@@ -153,7 +153,7 @@
 	display: inline-block;
 	font-size: 1em;
 	white-space: nowrap;
-	padding: 0.85em 0.25em;
+	padding: 10px 13px;
 	cursor: pointer;
 	border: none;
 	background: transparent;
@@ -162,6 +162,7 @@
 
 .action:focus {
 	outline: none;
+	text-decoration: none;
 }
 
 .action--button {
@@ -241,6 +242,9 @@
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
+.action--compare-add .fa-plus {
+	margin: 0 1.5px;
+}
 
 .compare-basket--active .action--compare {
 	opacity: 1;
@@ -263,11 +267,15 @@
 	padding: 0;
 	font-size: 0.65em;
 }
+.action--quick-view, .action--compare-add {
+	border-radius: 50%;
+	background-color: #eee;
+}
 .action--quick-view {
 	color: #ffa6a6;
 	position: absolute;
 	top: 5px;
-	right: 30px;
+	right: 50px;
 }
 .action--compare-add {
 	color: #ffa6a6;
@@ -276,7 +284,7 @@
 	right: 5px;
 }
 
-.action--compare-add:hover .action__text--invisible {
+.action--quick-view:hover .action__text--invisible, .action--compare-add:hover .action__text--invisible {
 	opacity: 1;
 	top: 35px;
 	right: 0px;
@@ -288,7 +296,7 @@
 	padding: 3px 5px;
 }
 
-.action--remove:hover,
+.action--remove:hover,.action--quick-view:hover,
 .action--compare-add:hover {
 	color: #FF6B6B;
 }
@@ -299,7 +307,7 @@
 }
 
 .action--compare-add input[type=checkbox]:checked ~ .fa-check {
-	display: block;
+	display: inline-block;
 	color: #FF6B6B;
 }
 
